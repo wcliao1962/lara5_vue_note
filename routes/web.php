@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', 'NoteController@api');
+Route::get('/api', 'NoteController@index');
+Route::resource('vuenotes','NoteController');
