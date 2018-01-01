@@ -18,3 +18,6 @@
 Route::get('/', 'NoteController@api');
 Route::get('/api', 'NoteController@index');
 Route::resource('vuenotes','NoteController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
