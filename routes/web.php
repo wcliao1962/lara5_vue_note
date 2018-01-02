@@ -21,3 +21,5 @@ Route::resource('vuenotes','NoteController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('dogs','DogsController');
