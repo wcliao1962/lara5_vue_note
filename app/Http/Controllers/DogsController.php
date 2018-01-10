@@ -15,6 +15,7 @@ class DogsController extends Controller
 
     public function store(Request $request)
     {
+        //dd($request->all());
         Dog::create($request->all());
     }
 
